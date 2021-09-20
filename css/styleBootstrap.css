@@ -1,0 +1,84 @@
+
+.body{
+    background-color: rgb(40, 54, 50);
+
+}
+
+/* id para centrar el row que contiene al carrousel*/
+#row{
+    margin-right: 0;
+    margin-left: 0;
+    
+}
+
+/* id para el resto de las páginas del sitio*/
+#row2{
+    background-color: rgb(228, 228, 228);
+    margin-right: 0;
+    margin-left: 0;
+    
+}
+
+
+#logo{
+    font-family: 'Prompt', sans-serif;
+    font-size: 3rem;
+    color: rgb(248, 82, 82);
+
+}
+
+.nav-link{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+}
+
+
+#footer{
+    margin-right: 0;
+    margin-left: 0;
+    background-color: rgb(253, 114, 114);
+    color: rgb(0, 0, 0);
+    font-family: 'Padauk',sans-serif;
+}
+
+
+p{
+    text-align: justify;
+}
+
+#form{
+    background-color: rgb(255, 255, 255);
+    padding: 1vh 2vw 1vh 2vw;
+    margin: 1vh 2vw 1vh 2vw;
+}
+
+.img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    border-radius: 40px;
+
+}
+
+.img:hover{
+    opacity: 1;
+    transform: scale(1.07,1.07);
+    transition: 1.5s;
+}
+
+/*Uso media query para que las distintas páginas tengan el mismo alto, y que en pantallas chicas no entre en conflicto con la class container de BS*/
+
+@media only screen and (max-width:720px){
+    #row2{
+        height: auto;
+        
+    }
+}
+
+@media only screen and (min-width:720px){
+    #row2{
+        height: 80vh;
+        
+    }
+}
